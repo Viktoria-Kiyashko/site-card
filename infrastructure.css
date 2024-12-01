@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #748691;
+    color: #333;
+}
+header, footer {
+    background-color: #333;
+    color: #21323D;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #E7E7E7;
+}
+
+p{
+    color: #E7E7E7;
+
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+        
+        section {
+            margin-bottom: 20px;
+        }
+       
+   
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .map-image {
+            display: block;
+            width: 100%;
+        }
+        .map-point {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #21323D;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+        .map-point:hover + .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            transform: translate(-50%, -120%);
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }

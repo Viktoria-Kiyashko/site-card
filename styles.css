@@ -1,0 +1,214 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #748691;
+}
+
+header, footer {
+    background-color: #333;
+    color: #21323D;
+    text-align: center;
+    padding: 1em 0;
+}
+/*Стиили к менюшке*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/*Стили текста*/
+
+h1 {
+    color: #E7E7E7;
+}
+
+h2{
+    text-align: center;
+    color: #E7E7E7;
+    
+}
+
+a{
+    color: #E7E7E7;
+}
+
+p{
+    color: #E7E7E7;
+
+}
+
+/* Убираем подчеркивание */
+h3 a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/*эффект при наведении */
+h3 a:hover {
+    text-decoration: underline; 
+    color: #8E855B; 
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 2em auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    height: 600px;
+    
+}
+
+.slides {
+    display: flex;
+    width: 600%; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100vw;
+    display: flex;
+
+   
+}
+
+/* Радиокнопки */
+input[type="radio"] {
+    display: none;
+}
+
+/* Сдвиг для каждого слайда */
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+#slide5:checked ~ .slides {
+    transform: translateX(-400%);
+}
+#slide6:checked ~ .slides {
+    transform: translateX(-500%);
+}
+
+
+/* Навигация */
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.navigation label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation label:hover {
+    background-color: #333;
+}
+
+input[type="radio"]:checked + .navigation label {
+    background-color: #333;
+}
+
+/* Общий стиль для секции */
+.events {
+    text-align: center;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+.events h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* Контейнер для карточек */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Карточки событий */
+.event-card {
+    background: #23262C;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили заголовка и даты */
+.event-card h3 {
+    font-size: 1.25rem;
+     color: #E7E7E7;;
+    margin-bottom: 0.5rem;
+}
+
+.event-card time {
+    font-size: 0.875rem;
+    color: #b0b0b0;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.5;
+}

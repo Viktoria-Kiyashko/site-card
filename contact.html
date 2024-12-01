@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О разработчике</a></li>
+                <li><a href="history.html">История</a></li>
+                <li><a href="infrastructure.html">Инфраструктура</a></li>
+                <li><a href="culture.html">Культура</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Связаться с нами</h2>
+            <p>Адрес: г. Иловайск, ул. Центральная, 123</p>
+            <p>Телефон: +38 (012) 345-67-89</p>
+            <p>Email: info@ilovaysk.ru</p>
+        </section>
+        <section class="contact-form">
+            <h2>Форма обратной связи</h2>
+            <form action="https://your-backend-endpoint.com" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Введите ваше сообщение"></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024. Разработано для проекта.</p>
+    </footer>
+</body>
+</html>
